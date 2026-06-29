@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact — Demander un audit · Par Ici Kénitra</title>
+<meta name="description" content="Demandez un audit, un rappel ou un rendez-vous. Conciergerie locative courte durée à Kénitra, Salé et Rabat — pilotage Paris, relais Maroc." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav">
+    <a href="index.html" class="logo">
+      <span class="lg-mark">Par Ici</span>
+      <span class="lg-sub">Kénitra · Salé · Rabat</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="zones.html">Zones desservies</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="contact.html" class="btn">Demander un audit</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Menu"><span></span></button>
+  </div>
+</header>
+
+<section class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">Contact</span>
+    <h1>Parlons de votre <em class="italic" style="color:var(--accent);">bien</em>.</h1>
+    <p class="lead">
+      Décrivez-nous brièvement votre situation. Nous revenons vers vous sous 24 heures ouvrées avec une première lecture et, si pertinent, une proposition d'audit écrit.
+    </p>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
+    <div class="contact-layout">
+
+      <aside class="contact-info">
+        <span class="eyebrow">— Comment nous joindre</span>
+        <h2 style="margin-top: 24px;">Trois manières<br>de prendre contact.</h2>
+        <p style="margin-top: 24px; color: var(--ink-soft); max-width: 38ch;">
+          Choisissez le format qui vous convient. Toutes les demandes sont traitées par la même personne&nbsp;: vous échangez directement avec votre interlocuteur.
+        </p>
+
+        <div class="info-row" id="audit">
+          <div class="info-label">— Option 01</div>
+          <div class="info-value"><strong>Demander un audit</strong></div>
+          <p class="muted" style="font-size: 13.5px; margin-top: 8px; max-width: 38ch;">Une analyse écrite de votre bien et de son potentiel locatif. Gratuite, sans engagement.</p>
+        </div>
+        <div class="info-row" id="rappel">
+          <div class="info-label">— Option 02</div>
+          <div class="info-value"><strong>Être rappelé</strong></div>
+          <p class="muted" style="font-size: 13.5px; margin-top: 8px; max-width: 38ch;">Indiquez votre numéro et votre disponibilité. Nous vous appelons à l'heure choisie.</p>
+        </div>
+        <div class="info-row" id="rdv">
+          <div class="info-label">— Option 03</div>
+          <div class="info-value"><strong>Demander un rendez-vous</strong></div>
+          <p class="muted" style="font-size: 13.5px; margin-top: 8px; max-width: 38ch;">Visio ou rencontre, à Paris ou au Maroc selon votre lieu de résidence.</p>
+        </div>
+
+        <div style="margin-top: 50px;">
+          <h5 style="font-family: var(--mono); font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin: 0 0 16px;">Coordonnées directes</h5>
+          <p style="font-size: 15px; color: var(--ink); line-height: 1.7;">
+            <a href="mailto:contact@paricikenitra.com" style="border-bottom: 1px solid var(--rule);">contact@paricikenitra.com</a><br>
+            <span style="color: var(--muted); font-size: 13.5px;">Réponse sous 24h ouvrées</span>
+          </p>
+        </div>
+      </aside>
+
+      <form class="contact-form" novalidate>
+        <span class="eyebrow no-dash" style="font-size: 11px;">Formulaire</span>
+        <h3 style="margin-top: 12px; margin-bottom: 8px; font-size: 28px;">Demande d'échange</h3>
+        <p class="muted" style="font-size: 14px; margin-bottom: 36px;">Les champs marqués d'un astérisque sont requis.</p>
+
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="nom">Nom *</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="vous@email.com" required>
+          </div>
+          <div class="form-field">
+            <label for="telephone">Téléphone</label>
+            <input type="tel" id="telephone" name="telephone" placeholder="+33 · +212">
+          </div>
+          <div class="form-field">
+            <label for="ville">Ville du bien *</label>
+            <select id="ville" name="ville" required>
+              <option value="">Sélectionner</option>
+              <option>Kénitra</option>
+              <option>Salé</option>
+              <option>Rabat</option>
+              <option>Autre — à préciser</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="type">Type de bien</label>
+            <select id="type" name="type">
+              <option value="">Sélectionner</option>
+              <option>Appartement</option>
+              <option>Villa / maison</option>
+              <option>Riad</option>
+              <option>Studio</option>
+              <option>Plusieurs biens</option>
+              <option>Bien à acquérir</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="format">Format souhaité</label>
+            <select id="format" name="format">
+              <option value="">Sélectionner</option>
+              <option>Demande d'audit</option>
+              <option>Demande de rappel</option>
+              <option>Demande de rendez-vous</option>
+              <option>Question générale</option>
+            </select>
+          </div>
+          <div class="form-field full">
+            <label for="message">Votre message *</label>
+            <textarea id="message" name="message" rows="5" placeholder="Décrivez-nous brièvement votre bien, votre situation et vos attentes." required></textarea>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <p class="form-note">Vos informations restent confidentielles. Nous ne les utilisons que pour vous répondre.</p>
+          <button type="submit" class="btn">Envoyer la demande</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <a href="index.html" class="logo">
+          <span class="lg-mark">Par Ici</span>
+          <span class="lg-sub">Kénitra · Salé · Rabat</span>
+        </a>
+        <p class="foot-tag">Pilotage Paris · Relais Maroc.<br>Gestion locative courte durée, structurée et présente.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="zones.html">Zones desservies</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Zones</h5>
+        <ul>
+          <li>Kénitra</li>
+          <li>Salé</li>
+          <li>Rabat</li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:contact@paricikenitra.com">contact@paricikenitra.com</a></li>
+          <li><a href="tel:">+33 — à compléter</a></li>
+          <li><a href="tel:">+212 — à compléter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>© 2026 Par Ici Kénitra. Tous droits réservés.</div>
+      <div style="display:flex; gap:24px;">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="confidentialite.html">Confidentialité</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>
