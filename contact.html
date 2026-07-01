@@ -76,8 +76,9 @@
         </div>
       </aside>
 
-      <form class="contact-form" id="contactForm" action="https://formspree.io/f/xrewavod" method="POST" novalidate>
+      <form class="contact-form" action="https://formspree.io/f/xrewavod" method="POST" novalidate>
         <input type="hidden" name="_subject" value="Nouvelle demande depuis le site">
+        <input type="hidden" name="_next" value="https://VOTRE-USERNAME.github.io/merci.html">
         <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
 
         <span class="eyebrow no-dash" style="font-size: 11px;">Formulaire</span>
@@ -136,8 +137,8 @@
         </div>
 
         <div class="form-actions">
-          <p class="form-note" id="statusText">Vos informations restent confidentielles. Nous ne les utilisons que pour vous répondre.</p>
-          <button type="submit" class="btn" id="submitBtn">Envoyer la demande</button>
+          <p class="form-note">Vos informations restent confidentielles. Nous ne les utilisons que pour vous répondre.</p>
+          <button type="submit" class="btn">Envoyer la demande</button>
         </div>
       </form>
 
@@ -193,37 +194,5 @@
 </footer>
 
 <script src="assets/js/site.js"></script>
-<script>
-  const form = document.getElementById('contactForm');
-  const submitBtn = document.getElementById('submitBtn');
-  const statusText = document.getElementById('statusText');
-
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    submitBtn.disabled = true;
-    submitBtn.textContent = 'Envoi...';
-    statusText.textContent = 'Envoi en cours...';
-
-    try {
-      const response = await fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: { 'Accept': 'application/json' }
-      });
-
-      if (response.ok) {
-        window.location.href = 'merci.html';
-      } else {
-        statusText.textContent = 'Erreur lors de l’envoi. Réessaie dans un instant.';
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Envoyer la demande';
-      }
-    } catch (error) {
-      statusText.textContent = 'Impossible d’envoyer le formulaire pour le moment.';
-      submitBtn.disabled = false;
-      submitBtn.textContent = 'Envoyer la demande';
-    }
-  });
-</script>
 </body>
 </html>
